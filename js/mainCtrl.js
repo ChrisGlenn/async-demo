@@ -2,10 +2,10 @@ var app = angular.module('chatroom');
 
 app.controller('mainCtrl', function($scope, myService){
   
-  console.log('hello from controller');
-  
   $scope.shuffle = function() {
-    console.log('shuffling')
+    myService.getData().then(function(results) {
+      $scope.cards = results.data.cards
+    })
   }
   
 })
