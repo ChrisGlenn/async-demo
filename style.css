@@ -31,3 +31,14 @@ p{
   margin: 3px 0;
   font-size: 17px;
 }
+
+.card-div{
+  display: inline-block;
+  width: 130px;
+  height: 130px;
+}
+
+.card-image{
+  margin: 0;
+  width: 100%;
+}
